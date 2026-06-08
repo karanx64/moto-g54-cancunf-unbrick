@@ -1,15 +1,17 @@
-```md
-# 📱 Motorola XT2343-5 (cancunf) — Full Unbrick & Recovery Log
+### *CAUTION : THIS IS NOT A GUIDE BUT A LOG OF MY JOURNEY TO REVIVE MY PHONE FROM A FIRM-BRICK STATE (MORE THAN SOFT-BRICK, LESS THAN HARD-BRICK) AND IS SUMMARISED USING CHATGPT.*
 
-## ⚠️ Disclaimer
-CAUTION : THIS IS NOT A GUIDE BUT A LOG OF MY JOURNEY TO REVIVE MY PHONE FROM FIRM-BRICK (MORE THAN SOFT-BRICK, LESS THAN HARD-BRICK) STATE AND IS PARAPHARASED USING CHATGPT.
+
+# Motorola XT2343-5 (cancunf) — Full Unbrick & Recovery Log
+
 This document is a reconstruction of a real-world recovery process performed on a Motorola MT6855 (cancunf / XT2343-5) device.  
 It includes fastboot, AVB, A/B slot repair, and blankflash/SP Flash Tool usage.
 
-Follow roceed at your own risk. This is only for informational purpose.
-(AGAIN, Not A GUIDE)
 
-How I briced it:
+Follow it at your own risk. This is only for informational purpose.
+
+(AGAIN, NOT A GUIDE)
+
+## How I bricked it:
 - unlocked bootloader and tried many custom ROMs.
 - rooted using kerselsu and whatnot.
 - reflashed stock ROM, relocked bootloader.
@@ -18,7 +20,7 @@ How I briced it:
 - when connected to PC, it did not stay on or off, instead stuck on a bootloop.
 - did not stay in fastboot or did not stay off.
 
-#fix in nutshell:
+## Fix in a nutshell:
 - removed backcover and disconnected battery.
 - it made it stay off when connected to PC.
 - did a blankflash.
@@ -307,4 +309,3 @@ Not the main fix — but helped stabilize device access.
 ---
 
 # 🧾 End of Log
-```
