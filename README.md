@@ -309,3 +309,10 @@ Not the main fix — but helped stabilize device access.
 ---
 
 # End of Log
+
+
+---
+## special thanks to **Ayan Biswas** for the unbrick guide.
+
+https://github.com/not-ayan/motorola_g54_unbrick_guide
+---
