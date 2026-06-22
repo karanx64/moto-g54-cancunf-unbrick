@@ -66,9 +66,9 @@ current-slot: a
 
 ---
 
-# ⚠️ 2. Key Observations Before Recovery
+# 2. Key Observations Before Recovery
 
-### ❗ efuseBackup warning
+### efuseBackup warning
 ```
 
 Blowing efuseBackup is not allowed, skipping
@@ -78,7 +78,7 @@ Blowing efuseBackup is not allowed, skipping
 
 ---
 
-### ❗ set_active failure
+###  set_active failure
 ```
 
 fastboot set_active a → FAILED
@@ -92,13 +92,13 @@ Indicates:
 
 ---
 
-### ❗ firmware mismatch clue
+### firmware mismatch clue
 - Build fingerprint mismatch detected:
   - 5-5 vs 5-6 firmware variants
 
 ---
 
-# 🧪 3. Partition & Flashing Attempts
+# 3. Partition & Flashing Attempts
 
 ## Verified partitions
 ```
@@ -113,7 +113,7 @@ lk, tee, scp, md1img, gz, vcp, gpueb
 
 ---
 
-## ❌ First super flash failure
+##  First super flash failure
 ```
 
 Preflash validation failed
@@ -123,7 +123,7 @@ WARNING: vbmeta and vbmeta_system required before flashing super
 
 ---
 
-# 🔧 4. Fix Applied — AVB Chain Repair
+# 4. Fix Applied — AVB Chain Repair
 
 ## Step 1: Flash AVB components
 ```
@@ -154,7 +154,7 @@ fastboot flash super super.img_sparsechunk.21
 
 ---
 
-# ⚙️ 5. Boot Chain Restoration
+# 5. Boot Chain Restoration
 
 ## Flashed components
 
@@ -173,7 +173,7 @@ fastboot flash super super.img_sparsechunk.21
 
 ---
 
-# 💣 6. Critical Warning (efuseBackup)
+# 6. Critical Warning (efuseBackup)
 
 ```
 
@@ -186,7 +186,7 @@ Blowing efuseBackup is not allowed, skipping
 
 ---
 
-# 🧠 7. GPT Flash Attempt
+# 7. GPT Flash Attempt
 
 ```
 
@@ -199,7 +199,7 @@ fastboot flash gpt PGPT
 
 ---
 
-# 🔁 8. Slot State After Flashing
+# 8. Slot State After Flashing
 
 ```
 
@@ -214,7 +214,7 @@ slot-retry-count:_b: 7
 
 ---
 
-# 🚀 9. Recovery Breakthrough
+# 9. Recovery Breakthrough
 
 After completing:
 
@@ -230,7 +230,7 @@ Device transitioned:
 
 ---
 
-# 📱 10. Final Working State
+# 10. Final Working State
 
 ## Bootloader
 ```
@@ -247,7 +247,7 @@ iswarrantyvoid: yes
 
 ---
 
-# 🧠 11. Root Cause Analysis
+# 11. Root Cause Analysis
 
 ### Primary issues:
 
@@ -259,7 +259,7 @@ iswarrantyvoid: yes
 
 ---
 
-# 🔥 12. Critical Fix Summary
+# 12. Critical Fix Summary
 
 ✔ Flash full boot chain (both slots)  
 ✔ Flash vbmeta BEFORE super  
@@ -270,7 +270,7 @@ iswarrantyvoid: yes
 
 ---
 
-# ⚠️ 13. Lessons Learned
+# 13. Lessons Learned
 
 ## Motorola MTK A/B devices are strict:
 - AVB must be consistent
@@ -279,14 +279,14 @@ iswarrantyvoid: yes
 
 ---
 
-## 🚫 DO NOT:
+## DO NOT:
 - Lock bootloader on mismatched firmware
 - Mix firmware versions across partitions
 - Flash super without vbmeta chain
 
 ---
 
-# 🧭 14. Blankflash Insight
+# 14. Blankflash Insight
 
 Used SP Flash Tool / blankflash method earlier:
 
@@ -298,7 +298,7 @@ Not the main fix — but helped stabilize device access.
 
 ---
 
-# 🎯 Final Outcome
+# Final Outcome
 
 ✔ Device fully recovered  
 ✔ Axion AOSP running  
@@ -308,4 +308,4 @@ Not the main fix — but helped stabilize device access.
 
 ---
 
-# 🧾 End of Log
+# End of Log
